@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
+import { Facebook, Twitter, Instagram, Linkedin,Youtube } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -10,9 +10,9 @@ const Footer = () => {
         
         {/* Logo & Description */}
         <div className="text-center md:text-left">
-          <h2 className="text-xl font-bold">YourBrand</h2>
+          <h2 className="text-xl font-bold">ComputoAkash</h2>
           <p className="text-sm text-gray-400 mt-1">
-            &copy; {new Date().getFullYear()} YourBrand. All rights reserved.
+            &copy; {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
 
@@ -25,7 +25,7 @@ const Footer = () => {
         </ul>
 
         {/* Social Icons */}
-        <div className="flex space-x-4">
+        <div className="flex space-x-2">
           <Button variant="ghost" size="icon" className="text-white hover:text-blue-500">
             <Facebook size={18} />
           </Button>
@@ -37,6 +37,9 @@ const Footer = () => {
           </Button>
           <Button variant="ghost" size="icon" className="text-white hover:text-blue-700">
             <Linkedin size={18} />
+          </Button>
+          <Button variant="ghost" size="icon" className="text-white hover:text-red-700">
+            <Youtube size={18} />
           </Button>
         </div>
 
